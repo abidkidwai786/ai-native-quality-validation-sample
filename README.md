@@ -82,37 +82,6 @@ Configure the `.lambdatest/config.yaml` file with your TestMu AI project ID, fol
 
 
 
-Set your TestMu AI credentials:
-
-
-
-- For Linux/macOS:
-
-
-
-```bash
-
-export LT_USERNAME="YOUR_USERNAME"
-
-export LT_ACCESS_KEY="YOUR_ACCESS_KEY"
-
-```
-
-
-
-- For Windows:
-
-
-
-```bash
-
-set LT_USERNAME="YOUR_USERNAME"
-
-set LT_ACCESS_KEY="YOUR_ACCESS_KEY"
-
-```
-
-
 
 ### Run tests
 
