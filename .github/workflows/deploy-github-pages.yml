@@ -144,7 +144,11 @@ jobs:
           if [ "$TARGET" = "." ]; then
             # For main: remove all files except pr-* directories and .git
             find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'pr-*' -exec rm -rf {} +
-            cp -r _build/* .
+            if [ -d "_build/dist" ]; then
+              cp -r _build/dist/* .
+            else
+              cp -r _build/* .
+            fi
           else
             rm -rf "$TARGET"
             cp -r _build "$TARGET"
