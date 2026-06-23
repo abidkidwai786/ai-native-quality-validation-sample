@@ -24,7 +24,6 @@ const LOCATIONS = [
   { city: 'New Orleans', state: 'Louisiana', country: 'United States' },
   { city: 'Denver', state: 'Colorado', country: 'United States' },
   { city: 'Los Angeles', state: 'California', country: 'United States' },
-  { city: 'Ghaziabad', state: 'Uttar Pradesh', country: 'India' },
   { city: 'Delhi', state: 'Delhi', country: 'India' },
 ];
 
