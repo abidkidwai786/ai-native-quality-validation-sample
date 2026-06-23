@@ -143,12 +143,8 @@ jobs:
           TARGET="${{ steps.target.outputs.dir }}"
           if [ "$TARGET" = "." ]; then
             # For main: remove all files except pr-* directories and .git
-            find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'pr-*' -exec rm -rf {} +
-            if [ -d "_build/dist" ]; then
-              cp -r _build/dist/* .
-            else
-              cp -r _build/* .
-            fi
+            find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'pr-*' ! -name '_build' -exec rm -rf {} +
+            cp -r _build/* .
           else
             rm -rf "$TARGET"
             cp -r _build "$TARGET"
